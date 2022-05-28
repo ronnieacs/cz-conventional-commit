@@ -1,8 +1,8 @@
 {
-  "name": "@metahub/cz-conventional-commit",
-  "description": "Commitizen adapter following the conventional-changelog format, with emojis. 🎉",
+  "name": "@ronnieacs/cz-conventional-commit",
+  "description": "Commitizen adapter following the conventional-changelog format, with emojis. 🎉. Fork of https://github.com/pvdlg/cz-conventional-commit",
   "version": "0.0.0-development",
-  "author": "Pierre Vanduynslager",
+  "author": "Ronnie Ayala",
   "ava": {
     "helpers": [
       "test/helpers/**/*"
@@ -12,25 +12,25 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/pvdlg/cz-conventional-commit/issues"
+    "url": "https://github.com/ronnieacs/cz-conventional-commit/issues"
   },
   "dependencies": {
-    "commitizen": "^4.0.1",
-    "lodash": "^4.17.4",
+    "commitizen": "*",
+    "lodash": "^4.17.21",
     "word-wrap": "^1.2.3"
   },
   "devDependencies": {
-    "@commitlint/core": "^8.0.0",
+    "@commitlint/core": "^8.3.6",
     "ava": "^2.4.0",
-    "codecov": "^3.0.0",
-    "conventional-changelog-metahub": "^4.0.0",
-    "conventional-commits-parser": "^3.0.0",
+    "codecov": "^3.8.3",
+    "conventional-changelog-metahub": "^4.0.1",
+    "conventional-commits-parser": "^3.2.4",
     "emoji-regex": "^8.0.0",
-    "nyc": "^15.0.0",
-    "semantic-release": "^17.0.0",
-    "sinon": "^9.0.0",
-    "stringz": "^2.0.0",
-    "xo": "^0.27.0"
+    "nyc": "^15.1.0",
+    "semantic-release": "^17.4.7",
+    "sinon": "^9.2.4",
+    "stringz": "^2.1.0",
+    "xo": "^0.27.2"
   },
   "engines": {
     "node": ">=10.18"
@@ -39,7 +39,7 @@
     "lib",
     "index.js"
   ],
-  "homepage": "https://github.com/pvdlg/cz-conventional-commit#readme",
+  "homepage": "https://github.com/ronnieacs/cz-conventional-commit#readme",
   "keywords": [
     "command-line",
     "commit-hooks",
@@ -75,7 +75,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pvdlg/cz-conventional-commit.git"
+    "url": "https://github.com/ronnieacs/cz-conventional-commit.git"
   },
   "scripts": {
     "codecov": "codecov -f coverage/coverage-final.json",
