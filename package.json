@@ -1,6 +1,6 @@
 {
   "name": "@ronnieacs/cz-conventional-commit",
-  "description": "Commitizen adapter following the conventional-changelog format, with emojis. 🎉. Fork of https://github.com/pvdlg/cz-conventional-commit",
+  "description": "Commitizen adapter following the conventional-changelog format, with emojis. 🎉. Forked from https://github.com/pvdlg/cz-conventional-commit",
   "version": "0.0.0-development",
   "author": "Ronnie Ayala",
   "ava": {
