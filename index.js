@@ -1,3 +1,5 @@
+/* eslint-disable promise/prefer-await-to-then */
+
 const types = require('conventional-changelog-metahub/types');
 const aliases = require('conventional-changelog-metahub/aliases');
 const commitizen = require('commitizen');
@@ -11,10 +13,9 @@ const config = _.merge(commitizen.configLoader.load(), {
 
 module.exports = {
 	prompter: (cz, commit) => {
-		cz.prompt(questions({types: types.types, aliases}, config))
-			.then(function(answers) {
-				const commitMessage = format(answers, {types: types.types, aliases}, config);
-				return commit(commitMessage);
-			});
+		cz.prompt(questions({types: types.types, aliases}, config)).then(function(answers) {
+			const commitMessage = format(answers, {types: types.types, aliases}, config);
+			return commit(commitMessage);
+		});
 	},
 };
