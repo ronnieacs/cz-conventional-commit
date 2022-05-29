@@ -2,22 +2,22 @@
 
 [commitizen](https://github.com/commitizen/cz-cli) adapter following the [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog) format, with emojis and additionnal commit types (aliases).
 
-[![Travis](https://img.shields.io/travis/pvdlg/cz-conventional-commit.svg)](https://travis-ci.org/pvdlg/cz-conventional-commit)
-[![Codecov](https://img.shields.io/codecov/c/github/pvdlg/cz-conventional-commit.svg)](https://codecov.io/gh/pvdlg/cz-conventional-commit)
-[![Greenkeeper badge](https://badges.greenkeeper.io/pvdlg/cz-conventional-commit.svg)](https://greenkeeper.io/)
-[![license](https://img.shields.io/github/license/pvdlg/cz-conventional-commit.svg)](https://github.com/pvdlg/cz-conventional-commit/blob/master/LICENSE)
+[![Travis](https://img.shields.io/travis/ronnieacs/cz-conventional-commit.svg)](https://app.travis-ci.com/github/ronnieacs/cz-conventional-commit)
+[![Codecov](https://img.shields.io/codecov/c/github/ronnieacs/cz-conventional-commit.svg)](https://codecov.io/gh/ronnieacs/cz-conventional-commit)
+[![Greenkeeper badge](https://badges.greenkeeper.io/ronnieacs/cz-conventional-commit.svg)](https://greenkeeper.io/)
+[![license](https://img.shields.io/github/license/ronnieacs/cz-conventional-commit.svg)](https://github.com/ronnieacs/cz-conventional-commit/blob/master/LICENSE)
 
 ![Screenshot](img/cz-conventional-commit.jpg?raw=true)
 
 ## Install as a global utility
 
 ```bash
-npm install --global commitizen @metahub/cz-conventional-commit
+npm install --global commitizen @ronnieacs/cz-conventional-commit
 ```
 Create a .czrc file in your home directory, with the following content:
 ```json
 {
-  "path": "@metahub/cz-conventional-commit",
+  "path": "@ronnieacs/cz-conventional-commit",
   "cz-conventional-commit": {
     "maxSubjectLength": 72,
     "bodyLineLength": 100
@@ -30,15 +30,15 @@ See [commitizen documentation](https://github.com/commitizen/cz-cli#conventional
 
 ## Making your repo Commitizen-friendly
 ```bash
-npm install --save-dev commitizen @metahub/cz-conventional-commit
-./node_modules/.bin/commitizen init @metahub/cz-conventional-commit --save-dev
+npm install --save-dev commitizen @ronnieacs/cz-conventional-commit
+./node_modules/.bin/commitizen init @ronnieacs/cz-conventional-commit --save-dev
 ```
 You can customize cz-conventional-commit in `package.json`:
 ```json
 ...
 "config": {
   "commitizen": {
-    "path": "@metahub/cz-conventional-commit",
+    "path": "@ronnieacs/cz-conventional-commit",
     "cz-conventional-commit": {
       "maxSubjectLength": 72,
       "bodyLineLength": 100,
