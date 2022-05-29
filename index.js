@@ -8,7 +8,7 @@ const questions = require('./lib/questions');
 const format = require('./lib/format-commit');
 
 const config = _.merge(commitizen.configLoader.load(), {
-	'cz-conventional-commit': {maxSubjectLength: 72, bodyLineLength: 100, emoji: false},
+	'cz-conventional-commit': {maxSubjectLength: 72, bodyLineLength: 100},
 })['cz-conventional-commit'];
 
 module.exports = {
